@@ -35,3 +35,5 @@ jobs:
         docker run -d ${{ secrets.DOCKER_USERNAME }}/al-app:latest
         docker run -d ${{ secrets.DOCKER_USERNAME }}/al-db-loader:latest
         docker run -d ${{ secrets.DOCKER_USERNAME }}/al-email:latest
+
+        
