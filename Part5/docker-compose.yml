@@ -17,13 +17,13 @@ services:
       depends_on:
         - redis-server
       environment:
-        TO_ADDRESS: <your Quantic email>
-        FROM_ADDRESS: <new Gmail email>
-        FROM_PASSWORD: <Gmail app password>
+        TO_ADDRESS: <js200@students.quantic.edu>
+        FROM_ADDRESS: <salabiujami@gmail.com>
+        FROM_PASSWORD: <uurxoasxknbjssnc>>
     db-loader:
       build: db-loader/.
       volumes: 
-        - <Enter Here>allergy-lab-watchfolder:/mnt/watchfolder/
+        - C:/Users/HomePC/Desktop/allergy-lab-watchfolder:/mnt/watchfolder/
       environment:
         FOLDER_PATH: /mnt/watchfolder/
       depends_on:

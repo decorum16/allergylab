@@ -4,7 +4,17 @@ import csv
 import glob
 import time
 
+db_name = os.environ['DB_NAME']
+db_user = os.environ['DB_USER']
+db_pass = os.environ['DB_PASS']
+
+
 folder_path = os.environ['FOLDER_PATH']
+
+DB_NAME : allergen_info
+DB_USER : pythonapp
+DB_PASS : secretPass123
+
 
 for attempt in range(5, 0, -1):
     try:
@@ -46,3 +56,8 @@ while True:
     time.sleep(5)
 
 conn.close()
+
+
+
+
+
